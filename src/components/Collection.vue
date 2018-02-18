@@ -2,8 +2,8 @@
 
   <main class="wrapper">
 
-    <div>
-      <img class="main__logo" src="static/product-images/logo.png" alt="#" />
+    <div class="main__logo">
+      <img src="static/product-images/logo.png" alt="#" />
     </div>
     <div class="menu">
       <div class="menu__login">
@@ -13,11 +13,14 @@
         <i class="fas fa-lock"></i> 3 ITEMS
       </div>
       <div class="menu__burger">
-        <i class="fas fa-search"></i> <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i> 
+      </div>
+      <div class="menu__search">
+        <i class="fas fa-search"></i>
       </div>
     </div>
     <div class="topBanner">
-    <a href="https://google.com/"><img src="static/product-images/slider4.jpg" alt="#" /></a>
+    <img src="static/product-images/slider4.jpg" alt="#" />
     </div>
     <div class="bannerText">
       <div class="line1"></div>

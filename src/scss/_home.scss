@@ -777,7 +777,7 @@ body {
     margin-right: 5px;
     width: 80%;
     img {
-      width: 80%;
+      width: 79.5%;
     }
   }
 
@@ -821,6 +821,9 @@ body {
     }
   }
   .commentSlider{
+    img{
+      border: 10px solid;
+    }
     p{
       width: 35%;
     }
@@ -835,6 +838,7 @@ body {
 
     h2 {
       margin-bottom: 2%;
+      font-size: 40px;
     }
     i {
       font-size: 50px;
@@ -843,4 +847,73 @@ body {
   }
 
 }
+
+@media (min-width:1900px) {
+  /* HD */
+
+  .slide{
+    margin-left: 8.5%;
+    width: 101%
+  }
+
+  .slides {
+    height: 795px;
+  }
+
+  .nav label {
+    line-height: 795px;
+    margin-left: 8.5%;
+  }
+  .nav .next {
+    right: -9%;
+  }
+  .nav-dots {
+    left: 9%;
+  }
+
+  .category {
+    width: 100%;
+    margin: 5% 10% 5% 12%;
+  }
+
+  .brands__slider {
+    width: 81.75%;
+    margin: 0 12%;
+  }
+
+  .deals {
+    margin: 5% 10% 5% 12%;
+    width: 82.25%;
+  }
+  .deals__big {
+    width: 78.25%;
+  }
+
+  .suggestions {
+    margin: 2% 25% 2% 31%;
+  }
+
+  .items {
+    width: 94%;
+    margin: 0 0 5% 12%;
+  }
+
+  .seasonDeal{
+    width: 107%;
+  }
+
+  .commentSlider{
+    width: 107%;
+    font-size: 24px;
+    img{
+      border: 10px solid;
+      width: 10%;
+      height: 10%;
+    }
+    p{
+      width: 50%;
+    }
+  }
+
+  }
 
