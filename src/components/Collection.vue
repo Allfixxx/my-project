@@ -12,12 +12,13 @@
       <div class="menu__bag">
         <i class="fas fa-lock"></i> 3 ITEMS
       </div>
-      <div class="menu__burger">
-        <i class="fas fa-bars"></i> 
-      </div>
       <div class="menu__search">
         <i class="fas fa-search"></i>
       </div>
+      <div class="menu__burger">
+        <i class="fas fa-bars"></i> 
+      </div>
+
     </div>
     <div class="topBanner">
     <img src="static/product-images/slider4.jpg" alt="#" />
@@ -41,16 +42,16 @@
       </ul>
     </div>
 
-    <section class="items--collection">
+    <section class="items">
       <ul>
         <li v-for="product in products" v-bind:key="product.id">
           <router-link :to="'/product/' + product.id">
             <img :src="'/static/product-images/' + product.image_url" :alt="product.title">
-            <h2 class="items__title--collection"> {{ product.title}} </h2>
-            <p class="items__desciption--collection"> {{ product.description }} </p>
-            <div class="items__bag--collection">
-              <p class="items__price--collection"> {{ '$' + product.price }} </p>
-              <p class="items__add--collection"> <i class="fas fa-shopping-bag"></i> ADD TO BAG </p>
+            <h2 class="items__title"> {{ product.title}} </h2>
+            <p class="items__desciption"> {{ product.description }} </p>
+            <div class="items__bag">
+              <p class="items__price"> {{ '$' + product.price }} </p>
+              <p class="items__add"> <i class="fas fa-shopping-bag"></i> ADD TO BAG </p>
             </div>
           </router-link>
         </li>
@@ -68,9 +69,13 @@
 
     </section>
 
-    <section class="commentSlider">
-      <p> BUTTON </p>
-      <p> BUTTON </p>
+    <section class="subscription_buttons">
+      <div class="button1">
+        <p> YOUR EMAIL </p>
+      </div>
+      <div class="button2">
+        <p> SUBSCRIBE TO OUR NEWSLETTER </p>
+      </div>
     </section>
 
     <section class="medias">

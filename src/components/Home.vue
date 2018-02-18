@@ -151,7 +151,7 @@
 
     <section class="items">
       <ul>
-        <li v-for="product in products" v-bind:key="product.id">
+        <li v-for="product in products.slice(6)" v-bind:key="product.id">
           <router-link :to="'/product/' + product.id">
             <img :src="'/static/product-images/' + product.image_url" :alt="product.title">
             <h2 class="items__title"> {{ product.title}} </h2>

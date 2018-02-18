@@ -138,25 +138,29 @@ body {
   }
 
   .category__men {
-    width: auto;
-    height: auto;
-    margin-top: 5px;
+    margin-top: 13%;
+    img{
+      width: 100%;
+    }
   }
 
   .category__newsletter {
-    margin: 15px;
-    width: auto;
-    height: auto;
+    margin: 2% 2% 2% 6.5%;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
+    img{
+      width: 100%;
+    }
   }
 
   .category__women {
-    width: auto;
-    height: auto;
+    margin-top: 2%;
+    img{
+      width: 100%;
+    }
   }
 
   .button__subscribe {
-    margin: -75px 10% 0 10%;
+    margin: -23% 10% 0 10.5%;
     width: 70%;
     height: auto;
     justify-content: center;
@@ -173,6 +177,21 @@ body {
     a {
       text-decoration: none;
       color: $color-grey;
+    }
+  }
+
+  .brands__slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $color-lightgrey;
+    padding: 5% 5%;
+
+    h2 {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2%;
+      font-weight: bold;
     }
   }
 
@@ -316,8 +335,8 @@ body {
   }
 
   .button__subscribe {
-    margin: -100px 10% 0 10%;
-    width: 75%;
+    margin: -21% 10% 0 10.5%;
+    width: 70%;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -371,17 +390,20 @@ body {
 
   .category {
     flex-direction: row;
+    margin-top: 5%;
   }
   .category__men {
-    margin-top: 15px;
+    margin-top: 2.5%;
   }
-
+  .category__newsletter {
+    margin: 2.75% 2% 2% 2%;
+  }
   .category__women {
-    margin-top: 15px;
+    margin-top: 2.5%;
   }
 
   .button__subscribe {
-    margin: -45px 0 0 4%;
+    margin: -7.5% 0 0 4%;
     width: 20%;
     height: 25px;
 
@@ -396,15 +418,21 @@ body {
     height: auto;
     }
   .deals__big {
-    width: 113%;
     margin-right: 5px;
+    img{
+      width: 100%;
+    }
   }
 
   .deals__rightTop {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
   .deals__rightBot {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 
   .suggestions{
@@ -494,16 +522,17 @@ body {
     line-height: 332px;
   }
 
+  .category {
+    flex-direction: row;
+    margin-top: 5%;
+  }
+
   .button__subscribe {
-    margin: -60px 0 0 4%;
+    margin: -7.5% 0 0 4%;
     height: 35px;
     p {
       line-height: 30px;
     }
-  }
-
-  .deals__big {
-    width: 83.5%;
   }
 
   .suggestions--first {
@@ -578,8 +607,13 @@ body {
     line-height: 425px;
   }
 
-  .deals__big {
-    width: 65%;
+  .button__subscribe {
+    margin: -6% 0 0 4%;
+    width: 20%;
+
+    p {
+      line-height: 30px;
+    }
   }
 
   .medias {
@@ -604,10 +638,16 @@ body {
     line-height: 530px;
   }
 
+  .deals{
+    width: 90%;
+    margin: 5% 0 0 5%;
+  }
+
     .items {
       ul {
         display: flex;
         flex-direction: row;
+        margin-left: 4%;
       }
 
       li {
@@ -643,7 +683,7 @@ body {
   }
 
   .category__newsletter {
-    margin: 15px 0 6px 0;
+    margin: 2.5% 0 1% 0;
     width: auto;
     height: auto;
     z-index: 10;
@@ -651,31 +691,11 @@ body {
   }
 
   .button__subscribe {
-    margin: -80px 0 0 3%;
+    margin: -6% 0 0 3%;
     width: 20%;
     p {
-      line-height: 46px;
+      line-height: 30px;
     }
-  }
-
-  .deals {
-    display: flex;
-    width: 77%;
-    height: auto;
-    margin: 5% 0 5% 5%;
-  }
-
-  .deals__big {
-    width: 100%;
-    margin-right: 5px;
-  }
-
-  .deals__rightTop {
-    width: 148%;
-  }
-
-  .deals__rightBot {
-    width: 148%;
   }
 
   .suggestions {
@@ -745,20 +765,40 @@ body {
   .category {
     margin: 5% 10%;
   }
+
   .button__subscribe {
-    margin: -100px 0 0 4.5%;
+    margin: -5% 0 0 4.5%;
     width: 15%;
     height: 50px;
+
+    p {
+      line-height: 45px;
+    }
   }
 
-  .brands__slider{
+  .deals{
+    margin: 5% 0 5% 10%;
+  }
+  .deals__big{
+    width: 50.75%;
+    margin-right: 0.5%;
+  }
+  .deals__rightTop{
+    width: 131%;
+  }
+  .deals__rightBot{
+    width: 131%;
+  }
+
+  .brands__slider {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: $color-lightgrey;
     margin: 0 10%;
     padding: 5% 0;
-    h2{
+
+    h2 {
       text-align: center;
       width: 100%;
       margin-bottom: 2%;
@@ -766,37 +806,8 @@ body {
     }
   }
 
-  .deals {
-    display: flex;
-    width: 80.5%;
-    height: auto;
-    margin: 5% 10%;
-  }
-
-  .deals__big {
-    margin-right: 5px;
-    width: 80%;
-    img {
-      width: 79.5%;
-    }
-  }
-
-  .deals__rightTop {
-    margin-left: -50%;
-    img{
-      width: 100%;
-    }
-  }
-
-  .deals__rightBot {
-    margin-left: -50%;
-    img {
-      width: 100%;
-    }
-  }
-
   .items {
-    margin: 0 0 5% 6.5%;
+    margin: 0 0 5% 2.5%;
 
     ul {
       width: 87%;
@@ -815,16 +826,18 @@ body {
     width: 25%;
   }
 
-  .seasonDeal{
-    img{
+  .seasonDeal {
+    img {
       width: 100%;
     }
   }
-  .commentSlider{
-    img{
+
+  .commentSlider {
+    img {
       border: 10px solid;
     }
-    p{
+
+    p {
       width: 35%;
     }
   }
@@ -840,80 +853,10 @@ body {
       margin-bottom: 2%;
       font-size: 40px;
     }
+
     i {
       font-size: 50px;
       line-height: 175%;
     }
   }
-
 }
-
-@media (min-width:1900px) {
-  /* HD */
-
-  .slide{
-    margin-left: 8.5%;
-    width: 101%
-  }
-
-  .slides {
-    height: 795px;
-  }
-
-  .nav label {
-    line-height: 795px;
-    margin-left: 8.5%;
-  }
-  .nav .next {
-    right: -9%;
-  }
-  .nav-dots {
-    left: 9%;
-  }
-
-  .category {
-    width: 100%;
-    margin: 5% 10% 5% 12%;
-  }
-
-  .brands__slider {
-    width: 81.75%;
-    margin: 0 12%;
-  }
-
-  .deals {
-    margin: 5% 10% 5% 12%;
-    width: 82.25%;
-  }
-  .deals__big {
-    width: 78.25%;
-  }
-
-  .suggestions {
-    margin: 2% 25% 2% 31%;
-  }
-
-  .items {
-    width: 94%;
-    margin: 0 0 5% 12%;
-  }
-
-  .seasonDeal{
-    width: 107%;
-  }
-
-  .commentSlider{
-    width: 107%;
-    font-size: 24px;
-    img{
-      border: 10px solid;
-      width: 10%;
-      height: 10%;
-    }
-    p{
-      width: 50%;
-    }
-  }
-
-  }
-

@@ -45,9 +45,11 @@ body{
     width: 30%;
   }
 
-  .footer__cards{
+  .footer__cards {
     width: 100%;
-    margin: 20px 8% 10px 8%;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
   }
   .footer__logo{
     display: none;
@@ -57,6 +59,11 @@ body{
 
 @media (min-width:480px) {
   /* smartphones, Android phones, landscape iPhone */
+
+  .footer__cards {
+    
+  }
+
 }
 
 @media (min-width:600px) {
