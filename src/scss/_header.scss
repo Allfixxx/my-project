@@ -1,0 +1,29 @@
+@import '_variables.scss';
+
+body {
+}
+
+.main__logo {
+  position: sticky;
+  z-index: 100;
+  background-color: tomato;
+  width: auto;
+  height: 25px;
+}
+.menu {
+  position: sticky;
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  font-size: 13px;
+}
+.menu__login {
+  margin: 5px;
+}
+.menu__bag {
+  margin: 5px;
+}
+.menu__burger {
+  margin: 5px;
+}

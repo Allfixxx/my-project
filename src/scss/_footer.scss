@@ -1,0 +1,142 @@
+@import '_variables.scss';
+
+body{
+
+}
+
+
+@media (min-width:320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $color-grey;
+    color: $color-white;
+
+    h2 {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 3px;
+    }
+
+    a {
+      color: $color-white;
+    }
+  }
+
+  .footer__faq1 {
+    width: 30%;
+  }
+
+  .footer__faq2 {
+    width: 30%;
+  }
+
+  .footer__faq3 {
+    width: 30%;
+  }
+
+  .footer__cards{
+    width: 100%;
+    margin: 20px 8% 10px 8%;
+  }
+  .footer__logo{
+    display: none;
+  }
+
+}
+
+@media (min-width:480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (min-width:600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  .footer__cards {
+    margin: 20px 0 10px 28%;
+  }
+
+}
+
+@media (min-width:801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  .footer__cards {
+    margin: 20px 0 10px 33%;
+  }
+
+}
+
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  .footer__cards {
+    margin: 20px 0 10px 37%;
+  }
+
+}
+
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+
+  footer {
+    padding: 5% 0;
+    justify-content: space-around;
+    h2{
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+
+  .footer__faq1 {
+    width: 15%;
+  }
+
+  .footer__faq2 {
+    width: 15%;
+  }
+
+  .footer__faq3 {
+    width: 15%;
+  }
+  .footer__cards {
+    width: 20%;
+    margin: 4.5% 0;
+  }
+  .footer__logo{
+    display: block;
+    width: 15%;
+    margin: 4% 0;
+  }
+
+}
+
+@media (min-width:1900px) {
+  /* HD */
+
+  .footer{
+  }
+  .footer__cards {
+    width: 20%;
+    margin: 3% 0;
+  }
+
+  .footer__logo {
+    display: block;
+    width: 15%;
+    margin: 2.5% 0;
+  }
+
+}

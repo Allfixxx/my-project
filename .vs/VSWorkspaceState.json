@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\build",
+    "\\src",
+    "\\src\\assets",
+    "\\src\\components",
+    "\\src\\router",
+    "\\src\\scss",
+    "\\static"
+  ],
+  "SelectedNode": "\\src\\scss\\_variables.scss",
+  "PreviewInSolutionExplorer": false
+}

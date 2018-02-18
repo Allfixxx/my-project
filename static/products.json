@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "product 1",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 399.90
+  },
+  {
+    "id": 2,
+    "title": "product 2",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 599.90
+  },
+  {
+    "id": 3,
+    "title": "product 3",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 99.90
+  },
+  {
+    "id": 1,
+    "title": "product 1",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 399.90
+  },
+  {
+    "id": 2,
+    "title": "product 2",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 599.90
+  },
+  {
+    "id": 3,
+    "title": "product 3",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 99.90
+  },
+  {
+    "id": 1,
+    "title": "product 1",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 399.90
+  },
+  {
+    "id": 2,
+    "title": "product 2",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 599.90
+  },
+  {
+    "id": 3,
+    "title": "product 3",
+    "description": "Sample text is placed here, to see how it wil look with a longer text.",
+    "image_url": "1.jpg",
+    "price": 99.90
+  }
+]
