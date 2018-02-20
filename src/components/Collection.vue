@@ -61,7 +61,7 @@
     </section>
 
     <section class="medias">
-      <h2>GET US ON</h2>
+      <h2> ---------- GET US ON ---------- </h2>
       <ul>
         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
         <li><a href="#"><i class="fab fa-pinterest"></i></a></li>

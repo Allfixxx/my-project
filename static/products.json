@@ -3,63 +3,63 @@
     "id": 1,
     "title": "product 1",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product1.png",
+    "image_url": "9.png",
     "price": 399.90
   },
   {
     "id": 2,
     "title": "product 2",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product2.png",
+    "image_url": "10.png",
     "price": 599.90
   },
   {
     "id": 3,
     "title": "product 3",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product3.png",
+    "image_url": "11.png",
     "price": 99.90
   },
   {
     "id": 1,
-    "title": "product 1",
+    "title": "product 4",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product1.png",
+    "image_url": "12.png",
     "price": 399.90
   },
   {
     "id": 2,
-    "title": "product 2",
+    "title": "product 5",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product2.png",
+    "image_url": "13.png",
     "price": 599.90
   },
   {
     "id": 3,
-    "title": "product 3",
+    "title": "product 6",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product3.png",
+    "image_url": "14.png",
     "price": 99.90
   },
   {
     "id": 1,
-    "title": "product 1",
+    "title": "product 7",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product1.png",
+    "image_url": "15.png",
     "price": 399.90
   },
   {
     "id": 2,
-    "title": "product 2",
+    "title": "product 8",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product2.png",
+    "image_url": "16.png",
     "price": 599.90
   },
   {
     "id": 3,
-    "title": "product 3",
+    "title": "product 9",
     "description": "Sample text is placed here, to see how it wil look with a longer text.",
-    "image_url": "product3.png",
+    "image_url": "product5.png",
     "price": 99.90
   }
 ]

@@ -97,7 +97,7 @@
     </section>
 
     <section class="brands__slider">
-      <h2> TOP BRANDS </h2>
+      <h2> ---------- TOP BRANDS ---------- </h2>
         <img src="static/product-images/logos.png" alt="#" />
     </section>
 
@@ -135,7 +135,7 @@
 
     <section class="items">
       <ul>
-        <li v-for="product in products.slice(6)" v-bind:key="product.id">
+        <li v-for="product in products.slice(5)" v-bind:key="product.id">
           <router-link :to="'/product/' + product.id">
             <img :src="'/static/products/' + product.image_url" :alt="product.title">
             <h2 class="items__title"> {{ product.title}} </h2>
@@ -162,7 +162,7 @@
     </section>
 
     <section class="medias">
-      <h2>GET US ON</h2>
+      <h2> ---------- GET US ON ---------- </h2>
       <ul>
         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
         <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
