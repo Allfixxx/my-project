@@ -10,7 +10,7 @@ body {
 
   .main__logo {
     position: absolute;
-    top: 1%;
+    top: 1.5%;
     left: 3%;
     z-index: 100;
     width: 22%;
@@ -21,7 +21,7 @@ body {
 
   .menu {
     position: absolute;
-    top: 1%;
+    top: 1.5%;
     z-index: 100;
     display: flex;
     justify-content: flex-end;
@@ -53,73 +53,34 @@ body {
 
 }
 
-@media (min-width:600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-
-  .menu {
-    font-size: 18px;
-  }
-
-}
-
-@media (min-width:801px) {
+@media (min-width:768px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 
   .menu {
-    top: 1.25%;
-    font-size: 24px;
+    top: 2.5%;
+    font-size: 18px;
   }
 
   }
-
-@media (min-width:1025px) {
-  /* big landscape tablets, laptops, and desktops */
-
-  .main__logo {
-    top: 3%;
-    left: 5%;
-    width: 15%;
-  }
-
-  .menu {
-    top: 4%;
-    font-size: 12px;
-  }
-
-  .menu__login {
-    width: 7%;
-    margin-right: 0.5%;
-  }
-
-  .menu__bag {
-    width: 6%;
-  }
-
-  .menu__search {
-    width: 3%;
-  }
-
-  .menu__burger {
-    width: 8.5%;
-  }
-
-}
 
 @media (min-width:1281px) {
   /* hi-res laptops and desktops */
 
   .menu {
-    top: 4%;
-    font-size: 18px;
+    top: 3.5%;
+    font-size: 28px;
   }
 
   .menu__login {
-    width: 7%;
+    width: 14%;
   }
 
   .menu__bag {
-    width: 8%;
+    width: 15%;
     margin-right: -1.25%;
+  }
+  .menu__burger{
+    width: 6%;
   }
 
 }
@@ -128,8 +89,9 @@ body {
   /* HD */
 
   .main__logo {
-    top: 4%;
-    left: 6%;
+    top: 5%;
+    left: 5%;
+    width: 10%;
   }
 
   .menu {
