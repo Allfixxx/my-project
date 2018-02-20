@@ -2,24 +2,6 @@
 
   <main class="wrapper">
 
-    <div class="main__logo">
-      <img src="static/product-images/logo.png" alt="#" />
-    </div>
-    <div class="menu">
-      <div class="menu__login">
-        <i class="far fa-user"></i> LOGIN
-      </div>
-      <div class="menu__bag">
-        <i class="fas fa-lock"></i> 3 ITEMS
-      </div>
-      <div class="menu__search">
-        <i class="fas fa-search"></i>
-      </div>
-      <div class="menu__burger">
-        <i class="fas fa-bars"></i> 
-      </div>
-
-    </div>
     <div class="topBanner">
     <img src="static/product-images/slider4.jpg" alt="#" />
     </div>
@@ -33,7 +15,7 @@
 
     <div class="sorting">
       <ul>
-        <li class="sorting1"> NEW COLLECTION 216 <i class="fas fa-sort-down"> </i> </li>
+        <li class="sorting1"> NEW COLLECTION (1-32 of 58) </li>
         <li class="sorting2"> SORT BY <i class="fas fa-sort-down"> </i> </li>
         <li class="sorting3"> FEATURES <i class="fas fa-sort-down"> </i> </li>
         <li class="sorting4"> SIZE <i class="fas fa-sort-down"> </i> </li>
@@ -44,9 +26,9 @@
 
     <section class="items">
       <ul>
-        <li v-for="product in products" v-bind:key="product.id">
+        <li v-for="product in products.slice(1)" v-bind:key="product.id">
           <router-link :to="'/product/' + product.id">
-            <img :src="'/static/product-images/' + product.image_url" :alt="product.title">
+            <img :src="'/static/products/' + product.image_url" :alt="product.title">
             <h2 class="items__title"> {{ product.title}} </h2>
             <p class="items__desciption"> {{ product.description }} </p>
             <div class="items__bag">
@@ -91,40 +73,12 @@
 
     </section>
 
-    <footer>
-      <div class="footer__faq1">
-        <h2>Questions?</h2>
-        <a href="https://google.com/"><p>Help</p></a>
-        <a href="https://google.com/"><p>Track Order</p></a>
-        <a href="https://google.com/"><p>Returns</p></a>
-      </div>
-      <div class="footer__faq2">
-        <h2>Where to buy</h2>
-        <a href="https://google.com/"><p>Store Locator</p></a>
-        <a href="https://google.com/"><p>Whishlist</p></a>
-        <a href="https://google.com/"><p>Gift Cards</p></a>
-      </div>
-      <div class="footer__faq3">
-        <h2>About us</h2>
-        <a href="https://google.com/"><p>Our Story</p></a>
-        <a href="https://google.com/"><p>Careers</p></a>
-        <a href="https://google.com/"><p>Affiliates</p></a>
-      </div>
-      <div class="footer__cards">
-        <img src="static/product-images/cards.png" alt="#">
-      </div>
-      <div class="footer__logo">
-        <img src="static/product-images/logo.png" alt="#">
-      </div>
-    </footer>
-
     </main>
 
 </template>
 
 <script>
   import axios from 'axios';
-
 
   export default {
     name: 'product-list',

@@ -1,2 +1,25 @@
-﻿body {
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body {
+}
+
+.bottomBanner{
+  img{
+    width: 100%;
+  }
+}
+
+.designSection{
+  img{
+    width: 100%;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li{
+    width: 48%;
+  }
 }

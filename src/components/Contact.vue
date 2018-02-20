@@ -1,111 +1,76 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org"
-           target="_blank">
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
-  </div>
+
+  <form id="app" @submit="checkForm" action="https://vuejs.org/" method="post" novalidate="true">
+
+    <p v-if="errors.length">
+      <b>Please correct the following error(s):</b>
+      <ul>
+        <li v-for="error in errors">{{ error }}</li>
+      </ul>
+    </p>
+
+    <p>
+      <label for="name">
+        Name</label>
+          <input type="text" name="name" id="name" v-model="name">
+    </p>
+
+    <p>
+      <label for="email">
+        Email</label>
+          <input type="email" name="email" id="email" v-model="email">
+    </p>
+
+    <p>
+      <label for="movie">
+        Favorite Movie</label>
+          <select name="movie" id="movie" v-model="movie">
+            <option>Star Wars</option>
+            <option>Vanilla Sky</option>
+            <option>Atomic Blonde</option>
+          </select>
+    </p>
+
+    <p>
+      <input type="submit" value="Submit">
+    </p>
+
+  </form>
+
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  const app = new Vue({
+    el: '#app',
+    data: {
+      errors: [],
+      name: null,
+      email: null,
+      movie: null
+    },
+    methods: {
+      checkForm: function (e) {
+        this.errors = [];
+        if (!this.name) this.errors.push("Name required.");
+        if (!this.email) {
+          this.errors.push("Email required.");
+        } else if (!this.validEmail(this.email)) {
+          this.errors.push("Valid email required.");
+        }
+        if (!this.errors.length) return true;
+        e.preventDefault();
+      },
+      validEmail: function (email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      }
     }
-  }
-}
+  })
 </script>
+
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>

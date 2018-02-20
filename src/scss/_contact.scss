@@ -1,2 +1,10 @@
-﻿body {
+@import '_variables.scss';
+@import '_mixins.scss';
+
+
+body {
+}
+
+input, select {
+  margin-left: 10px;
 }
