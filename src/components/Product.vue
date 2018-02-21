@@ -144,7 +144,7 @@
             </div>
           </div>
           <div class="moreButton">
-            Button 2 goes here
+            <a href="https://google.com/"> READ MORE </a>
           </div>
         </div>
 
