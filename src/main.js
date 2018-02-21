@@ -4,7 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VeeValidate from 'vee-validate';
+import VueTabs from 'vue-nav-tabs';
+import 'vue-nav-tabs/themes/vue-tabs.css';
 
+Vue.use(VueTabs);
 Vue.use(VeeValidate);
 Vue.config.productionTip = false
 

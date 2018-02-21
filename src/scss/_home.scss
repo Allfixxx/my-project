@@ -314,31 +314,32 @@ body {
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
-    h2{
-      margin: 10px 0 10px 0;
-    }
-    ul{
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-    li {
-      border: 2px solid;
-      border-radius: 50%;
-      width: 25%;
-      min-height: 110px;
-      margin: 10px;
-    }
 
     h2 {
       font-weight: bold;
       width: 100%;
+      margin: 5% 0 2% 0;
     }
-    i{
+
+    ul {
       width: 100%;
-      margin-top: 30%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 5%;
+    }
+
+    li {
+      border: 2px solid;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin: 2%;
+    }
+
+    i {
+      width: 100%;
+      margin-top: 12%;
       color: $color-grey;
       font-size: 35px;
     }
@@ -381,6 +382,7 @@ body {
     }
     :hover{
       background-color: $color_blackHover;
+      color: $color-white;
     }
   }
 
@@ -472,17 +474,6 @@ body {
   }
   .items__add {
     width: 70%;
-  }
-
-  .medias {
-    li {
-      min-height: 175px;
-    }
-
-    i {
-      margin-top: 33%;
-      font-size: 50px;
-    }
   }
 
 }
@@ -599,20 +590,12 @@ body {
   }
 
   .medias {
-    margin: 5% 0;
-
     li {
-      width: 15%;
-      min-height: 175px;
+      width: 75px;
+      height: 75px;
     }
-
-    h2 {
-      margin-bottom: 2%;
-      font-size: 40px;
-    }
-
-    i {
-      font-size: 50px;
+    i{
+      margin-top: 18%;
     }
   }
 
@@ -709,21 +692,4 @@ body {
     }
   }
 
-  .medias {
-    margin: 5% 0;
-
-    li {
-      width: 10%;
-      min-height: 175px;
-    }
-
-    h2 {
-      margin-bottom: 2%;
-      font-size: 40px;
-    }
-
-    i {
-      font-size: 50px;
-    }
-  }
 }

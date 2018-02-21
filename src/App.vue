@@ -18,9 +18,15 @@
       <div class="menu__search">
         <i class="fas fa-search"></i>
       </div>
-      <div class="menu__burger">
-        <i class="fas fa-bars"></i>
-      </div>
+      <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+      <nav id="navigation1" class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Stuffs</a></li>
+          <li><a href="#">Other stuffs</a></li>
+          <li><a href="#">Cats</a></li>
+        </ul>
+      </nav>
     </div>
 
 

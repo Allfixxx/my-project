@@ -6,6 +6,7 @@ import Contact from '@/components/Contact'
 import ProductList from '@/components/ProductList'
 import Product from '@/components/Product'
 import ProductDetail from '@/components/ProductDetail'
+import { VueTabs, VTab } from 'vue-nav-tabs'
 
 Vue.use(Router)
 

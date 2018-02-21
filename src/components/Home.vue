@@ -120,14 +120,14 @@
     <section class="suggestions">
 
       <div class="suggestions--first">
-        <a href="https://google.com/"> <p> NEW ARRIVALS </p> </a>
+        <a href="https://google.com/"> NEW ARRIVALS </a>
         <hr />
       </div>
       <div class="suggestions--mid">
-        <a href="https://google.com/"> <p> TOP SELLERS </p> </a>
+        <a href="https://google.com/"> TOP SELLERS </a>
       </div>
       <div class="suggestions--last">
-        <a href="https://google.com/"> <p> FEATURED </p> </a>
+        <a href="https://google.com/"> FEATURED </a>
 
       </div>
 

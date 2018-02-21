@@ -5,135 +5,153 @@
     <div class="topBanner">
       <img src="static/product-images/slider5.jpg" alt="#" />
     </div>
+    <div class="firstBlock">
+      <div class="productPicture">
+        <section class="productAngles">
+          <ul>
+            <li v-for="product in products.slice(4)" v-bind:key="product.id">
+              <router-link :to="'/product/' + product.id">
+                <img :src="'/static/products/' + product.image_url" :alt="product.title">
+              </router-link>
+            </li>
+          </ul>
+        </section>
 
-    <section class="productAngles">
-      <ul>
-        <li v-for="product in products.slice(4)" v-bind:key="product.id">
-          <router-link :to="'/product/' + product.id">
-            <img :src="'/static/products/' + product.image_url" :alt="product.title">
-          </router-link>
-        </li>
-      </ul>
-    </section>
-
-    <section class="singleProduct">
-      <div v-for="product in products.slice(8)" v-bind:key="product.id">
-        <router-link :to="'/product/' + product.id">
-          <img :src="'/static/products/' + product.image_url" :alt="product.title">
-        </router-link>
+        <section class="singleProduct">
+          <div v-for="product in products.slice(8)" v-bind:key="product.id">
+            <router-link :to="'/product/' + product.id">
+              <img :src="'/static/products/' + product.image_url" :alt="product.title">
+            </router-link>
+          </div>
+        </section>
       </div>
-    </section>
 
-    <div class="chosenPic">
 
-    </div>
+      <div class="infoBlock">
 
-    <div class="infoBlock">
+        <div class="prodTitle">
+          <h2 v-for="product in products.slice(8)" v-bind:key="product.id">
+            <router-link :to="'/product/' + product.id">
+              {{ product.title}}
+            </router-link>
+          </h2>
+        </div>
 
-      <h2 v-for="product in products.slice(8)" v-bind:key="product.id">
-        <router-link :to="'/product/' + product.id">
-          {{ product.title}}
-        </router-link>
-      </h2>
+        <div class="priceBlock">
+          <div class="prodPrice">
+            <p v-for="product in products.slice(8)" v-bind:key="product.id">
+              <router-link :to="'/product/' + product.id">
+                {{ '$' + product.price }}
+              </router-link>
+            </p>
+          </div>
 
-      <p v-for="product in products.slice(8)" v-bind:key="product.id">
-        <router-link :to="'/product/' + product.id">
-          {{ '$' + product.price }}
-        </router-link></p>
+          <p class="prodShipping"><a href="#"><i class="fas fa-globe"></i>Free Shipping Wordwide</a></p>
+        </div>
 
-      <p> (fa icon) and text</p>
-
-      <div class="selections">
-        <div class="selection1">
-          <select name="subject" id="subject" v-model="subject">
+        <div class="selections">
+          <select class="selection1" name="subject" id="subject" v-model="subject">
             <option>Black</option>
             <option>White</option>
             <option>Pink</option>
           </select>
-        </div>
 
-        <div class="selection2">
-          <select name="subject" id="subject" v-model="subject">
+          <select class="selection2" name="subject" id="subject" v-model="subject">
             <option>Small</option>
             <option>Medium</option>
             <option>Large</option>
           </select>
+
+          <div class="selection3">
+            <a href="#"><i class="fab fa-osi"></i>Size Guide</a>
+          </div>
         </div>
 
-        <div class="selection3">
-          <p>(fa icon) Size Guide</p>
+        <div class="infoButtons">
+          <div class="addBag"><i class="fas fa-shopping-bag"></i> ADD TO BAG</div>
+          <div class="later">SAVE FOR LATER</div>
+          <div class="share"><a href="#"><i class="fas fa-share-alt"></i>Share this product</a></div>
         </div>
+
       </div>
 
-      <div class="infoBlock2">
-        <div class="addBag">Bag</div>
-        <div class="later">Later</div>
-        <div class="share">Share</div>
-      </div>
 
-      <div class="infoblock3">
-        <div class="productDescription"></div>
-        <div class="productBrand"></div>
-        <div class="productInfo"></div>
-      </div>
+
+      <vue-tabs class="details">
+        <v-tab title="Description" class="details__description">
+          Description Text Description Text Description Text Description Text Description Text Description Text Description Text
+        </v-tab>
+
+        <v-tab title="Brands" class="details__brands">
+          Brand Text
+        </v-tab>
+
+        <v-tab title="Info" class="details__info">
+          Info Text
+        </v-tab>
+      </vue-tabs>
 
     </div>
 
     <div class="middleBlock">
       <h2> Sharpen Your Look </h2>
-      <div class="midtLineProduct"> --- Line --- </div>
-      <p> Text </p>
+      <div class="middleLineProduct"></div>
+      <p> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
     </div>
     
     <section class="designSection">
-      <ul>
-        <li class="designSection1">
+
+        <div class="designSection1">
           <img src="static/product-images/look1.jpg" alt="#" />
-        </li>
+        </div>
 
-        <li class="designSection2">
-          <h2> Extrodenaru Design </h2>
-          <p> Lorem ipsum </p>
+        <div class="designSection2">
+          <h2> Extrodenary Design </h2>
+          <p> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </p>
 
-          <div class="circles">
-            <ul>
-              <li>circle 1</li>
-              <li>circle 2</li>
-              <li>circle 3</li>
-              <li>Text 1</li>
-              <li>Text 2</li>
-              <li>Text 3</li>
-            </ul>
+          <div class="circlesWithText">
+            <div class="circles">
+              <div class="singleCircle"><i class="fas fa-cut"></i></div>
+              <div class="singleCircle"><i class="fas fa-heart"></i></div>
+              <div class="singleCircle"><i class="fas fa-gem"></i></div>
+            </div>
+            <div class="circleText">
+              <div>Elegant Style</div>
+              <div>Elegant Style</div>
+              <div>Elegant Style</div>
+            </div>
           </div>
 
-          <div class="moreButton1">
-            Button 1 goes here
+          <div class="moreButton">
+            <a href="https://google.com/"> READ MORE </a>
           </div>
 
-        </li>
+        </div>
 
-        <li class="designSection3">
-          <h2> Extrodenaru Design </h2>
-          <p> Lorem ipsum </p>
-          <div class="circles">
-            <ul>
-              <li>circle 1</li>
-              <li>circle 2</li>
-              <li>circle 3</li>
-              <li>Text 1</li>
-              <li>Text 2</li>
-              <li>Text 3</li>
-            </ul>
+        <div class="designSection3">
+          <h2> Extrodenary Design </h2>
+          <p> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+          <div class="circlesWithText">
+            <div class="circles">
+              <div class="singleCircle"><i class="fas fa-cut"></i></div>
+              <div class="singleCircle"><i class="fas fa-heart"></i></div>
+              <div class="singleCircle"><i class="fas fa-gem"></i></div>
+            </div>
+            <div class="circleText">
+              <div>Elegant Style</div>
+              <div>Elegant Style</div>
+              <div>Elegant Style</div>
+            </div>
           </div>
-          <div class="moreButton1">
+          <div class="moreButton">
             Button 2 goes here
           </div>
-        </li>
+        </div>
 
-        <li class="designSection4">
+        <div class="designSection4">
           <img src="static/product-images/look2.jpg" alt="#" />
-        </li>
-      </ul>
+        </div>
+
     </section>
 
     <div class="bottomBanner">
@@ -182,22 +200,10 @@
       }
     }
   }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>

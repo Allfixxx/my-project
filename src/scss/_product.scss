@@ -4,22 +4,435 @@
 body {
 }
 
-.bottomBanner{
-  img{
+@media (min-width:480px) {
+
+
+  .productPicture{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .productAngles{
+    display: none;
+  }
+
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .priceBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
   }
+  .prodTitle{
+    font-size: 32px;
+  }
+  .prodPrice {
+    width: 35%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 22%;
+  }
+  .prodShipping{
+    width: 70%;
+    font-size: 12px;
+  }
+  .selections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    margin: 2% 0;
+  }
+  .selection1{
+    width: 60%;
+    height: 30px;
+    margin-bottom: 2%;
+  }
+  .selection2 {
+    width: 60%;
+    height: 30px;
+  }
+  .selection3 {
+    width: 35%;
+    height: 30px;
+    font-size: 12px;
+    background-color: $color-lightgrey;
+    padding: 2.5%;
+    text-align: center;
+  }
+
+  .infoButtons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 55%;
+
+    :hover {
+      background-color: $color-blackHover;
+      color: $color-white;
+    }
+  }
+  .addBag {
+    width: 60%;
+    background-color: $color-teal;
+    color: $color-white;
+    margin-bottom: 3%;
+    padding: 5% 0;
+    text-align: center;
+    line-height: 10px;
+  }
+  .later {
+    width: 60%;
+    height: 30px;
+    background-color: $color-lightgrey;
+    text-align: center;
+    font-size: 14px;
+    padding: 5% 0;
+    line-height: 5px;
+  }
+  .share{
+    width: 35%;
+    font-size: 10px;
+    text-align: center;
+    margin: 3% 0 15% 5%;
+  }
+
+  .details {
+    width: 80%;
+    margin: 0 0 10% 10%;
+    span {
+      font-size: 16px;
+    }
+  }
+  .details__description{
+    font-size: 16px;
+  }
+
+  .middleBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    h2{
+      width: 100%;
+      font-size: 50px;
+      margin-bottom: 3%;
+    }
+    p{
+      margin-bottom: 15%;
+    }
+  }
+  .middleLineProduct{
+    width: 25%;
+    height: 5px;
+    background-color: $color-teal;
+    margin-bottom: 5%;
+  }
+
+  .designSection {
+  }
+  .designSection1{
+    img{
+      display: none;
+    }
+  }
+  .designSection2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $color-grey;
+    color: $color-white;
+    padding: 10%;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 5%;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 5%;
+    }
+  }
+  .designSection3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $color-teal;
+    color: $color-white;
+    padding: 10%;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 5%;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 5%;
+    }
+  }
+  .designSection4 {
+    img {
+      display: none;
+    }
+  }
+  .circlesWithText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .circles {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 5% 0 0 6.5%;
+  }
+  .singleCircle {
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 50%;
+    i{
+      display: flex;
+      font-size: 30px;
+      margin: 27% 0 0 0;
+      justify-content: center;
+    }
+  }
+
+  .circleText {
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    margin: 0 0 5% 5%;
+    font-size: 12px;
+  }
+
+  .moreButton {
+    border: 2px solid $color-white;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+
+    a {
+      color: $color-white;
+    }
+
+    :hover {
+      background-color: $color-white;
+    }
+  }
+
+
+  .bottomBanner {
+    img {
+      width: 100%;
+    }
+  }
+
+  .designSection {
+    img {
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    li {
+      width: 48%;
+    }
+  }
+
 }
 
-.designSection{
-  img{
+@media (min-width:768px) {
+
+  .singleProduct{
+    width: 50%;
+    margin-left: 15%;
+  }
+
+  .prodPrice {
+    width: 62%;
+  }
+
+  .selection3 {
+    line-height: 10px;
+  }
+
+  .later{
+  }
+
+}
+
+@media (min-width:1281px) {
+
+  .firstBlock{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
   }
-  ul{
+  .productAngles{
+    display: block;
+    margin-left: 24%;
+    img{
+      width: 30%;
+    }
+  }
+  .singleProduct{
+    margin: 1% 0 0 -10%;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+
+  .infoBlock{
+    width: 50%;
+    margin: 5% 0 0 0;
+  }
+  .details{
+    width: 80%;
+    margin-top: 5%;
+  }
+
+  .prodTitle{
+    margin-left: -35%;
+  }
+  .prodPrice {
+    width: 11.5%;
+  }
+
+  .share {
+    width: 40%;
+    font-size: 13px;
+    text-align: center;
+    margin: 3% 0 15% 0;
+    i{
+      margin: 0 3% 0 11%;
+    }
+  }
+
+  .middleBlock {
+    h2 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 10%;
+    }
+  }
+
+  .middleLineProduct {
+    width: 5%;
+    margin-bottom: 2%;
+  }
+
+  .designSection{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  li{
-    width: 48%;
+  .designSection1 {
+    width: 50%;
+    img {
+      display: block;
+      width: 100%;
+    }
   }
+  .designSection2{
+    width: 50%;
+  }
+  .designSection3{
+    width: 50%;
+  }
+  .designSection4 {
+    width: 50%;
+    img {
+      display: block;
+      width: 100%; 
+    }
+  }
+  .circlesWithText{
+    padding: 0;
+  }
+  .circles {
+    margin: 5% 0 0 0;
+  }
+  .circleText{
+    margin: 3% 0;
+  }
+  .moreButton{
+    font-size: 12px;
+    width: 55%;
+    padding: 2% 0;
+  }
+
 }
+
+@media (min-width:1900px) {
+
+  .firstBlock{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 5% 0 0 12.5%;
+  }
+  .productPicture{
+    width: 50%;
+    margin: 0;
+  }
+  .productAngles{
+    margin: 0 -25% 0 0;
+    img{
+      width: 20%;
+    }
+  }
+  .singleProduct{
+    width: 50%;
+    margin: 0.5% 0 0 0;
+  }
+  .infoBlock{
+    width: 50%;
+    margin: 0 0 5% -10%;
+  }
+  .details{
+    width: 27%;
+    margin: -10% 0 0 51.25%;
+  }
+  .prodTitle{
+    margin: -1% 37% 0 0;
+  }
+  .prodPrice{
+    width: 15%;
+  }
+
+  .middleBlock {
+    h2 {
+      font-size: 76px;
+      font-weight: bold;
+      margin: 5% 0 0 0;
+    }
+
+    p {
+      margin-bottom: 5%;
+    }
+  }
+
+  }
