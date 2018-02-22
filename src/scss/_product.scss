@@ -1,5 +1,4 @@
 @import '_variables.scss';
-@import '_mixins.scss';
 
 body {
 }
@@ -371,6 +370,7 @@ body {
   }
   .circlesWithText{
     padding: 0;
+    margin-left: 2%;
   }
   .circles {
     margin: 5% 0 0 0;

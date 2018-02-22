@@ -15,12 +15,12 @@
 
     <div class="sorting">
       <ul>
-        <li class="sorting1"> NEW COLLECTION (1-32 of 58) </li>
-        <li class="sorting2"> SORT BY <i class="fas fa-sort-down"> </i> </li>
-        <li class="sorting3"> FEATURES <i class="fas fa-sort-down"> </i> </li>
-        <li class="sorting4"> SIZE <i class="fas fa-sort-down"> </i> </li>
-        <li class="sorting5"> COLOUR <i class="fas fa-sort-down"> </i> </li>
-        <li class="sorting6"> PRICE <i class="fas fa-sort-down"> </i> </li>
+        <li class="sorting1"><p> NEW COLLECTION (1-32 of 58) </p></li>
+        <li class="sorting2"><p> SORT BY <i class="fas fa-sort-down"> </i> </p> </li>
+        <li class="sorting3"><p> FEATURES <i class="fas fa-sort-down"> </i> </p> </li>
+        <li class="sorting4"><p> SIZE <i class="fas fa-sort-down"> </i> </p> </li>
+        <li class="sorting5"><p> COLOUR <i class="fas fa-sort-down"> </i> </p> </li>
+        <li class="sorting6"><p> PRICE <i class="fas fa-sort-down"> </i> </p> </li>
       </ul>
     </div>
 
